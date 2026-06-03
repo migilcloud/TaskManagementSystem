@@ -13,7 +13,8 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://taskmanagementsystem-production-9ab1.vercel.app"
+        "http://localhost:5173",
+        "https://task-management-system-bice-iota.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
