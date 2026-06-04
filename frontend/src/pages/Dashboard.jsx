@@ -96,7 +96,7 @@ function Dashboard() {
 
   const updateTask = async (id, task) => {
     try {
-      await API.put(`/tasks/${id}`, task, {
+      await API.put(`/tasks/${id}/`, task, {
         headers: getAuthHeaders(),
       });
 
@@ -113,7 +113,7 @@ function Dashboard() {
     if (!confirmed) return;
 
     try {
-      await API.delete(`/tasks/${id}`, {
+      await API.delete(`/tasks/${id}/`, {
         headers: getAuthHeaders(),
       });
 
