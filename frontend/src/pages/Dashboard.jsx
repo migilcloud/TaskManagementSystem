@@ -58,7 +58,7 @@ function Dashboard() {
     setLoading(true);
 
     try {
-      const response = await API.get("/tasks", {
+      const response = await API.get("/tasks/", {
         headers: getAuthHeaders(),
       });
 
@@ -83,7 +83,7 @@ function Dashboard() {
 
   const addTask = async (task) => {
     try {
-      await API.post("/tasks", task, {
+      await API.post("/tasks/", task, {
         headers: getAuthHeaders(),
       });
 
