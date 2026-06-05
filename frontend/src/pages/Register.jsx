@@ -43,7 +43,8 @@ function Register() {
     <div className="auth-container">
       <div className="auth-card">
 
-        <h1>Register</h1>
+        <h1>Create Account</h1>
+        <p>Start organizing your work efficiently</p>
 
         <form onSubmit={handleSubmit}>
 
